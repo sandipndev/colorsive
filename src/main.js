@@ -22,62 +22,176 @@ document.addEventListener("DOMContentLoaded", () => {
     const injectScript = `
     document.querySelector("body").style.filter = "";`;
     chrome.tabs.executeScript({ code: injectScript });
+
+    document.querySelectorAll(".btn-switch").forEach((n) => {
+      n.classList.remove("bg-green-400");
+      n.classList.remove("hover:bg-green-400");
+    });
+
+    document.querySelector("#btn-switch-normal").classList.add("bg-green-400");
+    document
+      .querySelector("#btn-switch-normal")
+      .classList.add("hover:bg-green-400");
   });
+
   document
     .querySelector("#btn-switch-protanopia")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#protanopia')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-protanopia")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-protanopia")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-protanomaly")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#protanomaly')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-protanomaly")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-protanomaly")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-deuteranopia")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#deuteranopia')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-deuteranopia")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-deuteranopia")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-deuteranomaly")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#deuteranomaly')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-deuteranomaly")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-deuteranomaly")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-tritanopia")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#tritanopia')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-tritanopia")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-tritanopia")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-tritanomaly")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#tritanomaly')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-tritanomaly")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-tritanomaly")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-achromatopsia")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#achromatopsia')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-achromatopsia")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-achromatopsia")
+        .classList.add("hover:bg-green-400");
     });
+
   document
     .querySelector("#btn-switch-achromatomaly")
     .addEventListener("click", () => {
       const injectScript = `
   document.querySelector("body").style.filter = "url('#achromatomaly')";`;
       chrome.tabs.executeScript({ code: injectScript });
+
+      document.querySelectorAll(".btn-switch").forEach((n) => {
+        n.classList.remove("bg-green-400");
+        n.classList.remove("hover:bg-green-400");
+      });
+
+      document
+        .querySelector("#btn-switch-achromatomaly")
+        .classList.add("bg-green-400");
+      document
+        .querySelector("#btn-switch-achromatomaly")
+        .classList.add("hover:bg-green-400");
     });
 
   const fromCol = `from-${randomColor()}-${randomShade()}`;
